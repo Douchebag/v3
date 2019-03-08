@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 6f;
+    public float speed = 2f;
 
     Vector3 movement;
     Animator anim;
     Rigidbody playerRigidbody;
     int floorMask;
-    float camRayLength = 100f;
+    //float camRayLength = 100f;
 
     private float translation;
     private float straffe;
@@ -36,11 +36,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 8f;
+            speed = 4f;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 6f;
+            speed = 2f;
         }
         Animating(h, v);
         Move(h, v);
@@ -74,10 +74,10 @@ public class PlayerMovement : MonoBehaviour
     void Animating(float h, float v)
     {
         bool walking = h != 0f || v != 0f;
-        if(speed >= 6.1f)
+        if(speed >= 2.1f)
         {
             anim.SetBool("IsRunning", walking);
-        } else if(speed >= 0.1f && speed <= 6f)
+        } else if(speed >= 0.1f && speed <= 2f)
         {
             anim.SetBool("IsWalking", walking);
             anim.SetBool("IsRunning", false);
