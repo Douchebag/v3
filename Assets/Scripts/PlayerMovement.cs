@@ -42,6 +42,14 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 2f;
         }
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            speed = 0f;
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            speed = 2f;
+        }
         Animating(h, v);
         Move(h, v);
         //Turning();
@@ -77,10 +85,18 @@ public class PlayerMovement : MonoBehaviour
         if(speed >= 2.1f)
         {
             anim.SetBool("IsRunning", walking);
+            anim.SetBool("IsAiming", false);
+            anim.SetBool("IsWalking", true);
         } else if(speed >= 0.1f && speed <= 2f)
         {
             anim.SetBool("IsWalking", walking);
             anim.SetBool("IsRunning", false);
+            anim.SetBool("IsAiming", false);
+        } else if(speed == 0f)
+        {
+            anim.SetBool("IsAiming", true);
+            anim.SetBool("IsRunning", false);
+            anim.SetBool("IsWalking", false);
         }
     }
 }

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MouseCamController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/v3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
