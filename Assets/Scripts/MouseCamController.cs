@@ -14,6 +14,9 @@ public class MouseCamController : MonoBehaviour
     private Vector2 mouseLook;
     // smooth the mouse moving
     private Vector2 smoothV;
+    //
+    public float minimumY = -60F;
+    public float maximumY = 60F;
 
     void Start()
     {
@@ -33,6 +36,14 @@ public class MouseCamController : MonoBehaviour
         mouseLook += smoothV;
 
         // vector3.right means the x-axis
+        if(mouseLook.y < minimumY)
+        {
+            mouseLook.y = minimumY;
+        }
+        if(mouseLook.y > maximumY)
+        {
+            mouseLook.y = maximumY;
+        }
         transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
         character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
     }
