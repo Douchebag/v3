@@ -86,17 +86,17 @@ public class PlayerShooting : MonoBehaviour
         // Perform the raycast against gameobjects on the shootable layer and if it hits something...
         if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
         {
-            /*
+            
             // Try and find an EnemyHealth script on the gameobject hit.
-            EnemyHealth enemyHealth = shootHit.collider.GetComponent<EnemyHealth>();
+            ZombieHealth zombieHealth = shootHit.collider.GetComponent<ZombieHealth>();
 
             // If the EnemyHealth component exist...
-            if (enemyHealth != null)
+            if (zombieHealth != null)
             {
                 // ... the enemy should take damage.
-                enemyHealth.TakeDamage(damagePerShot, shootHit.point);
+                zombieHealth.TakeDamage(damagePerShot, shootHit.point);
             }
-            */
+            
             // Set the second position of the line renderer to the point the raycast hit.
             gunLine.SetPosition(1, shootHit.point);
             
