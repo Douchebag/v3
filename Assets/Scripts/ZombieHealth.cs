@@ -72,7 +72,7 @@ public class ZombieHealth : MonoBehaviour
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         isSinking = true;
-        //ScoreManager.score += scoreValue;
+        ScoreManager.score += scoreValue;
         Destroy(gameObject, 2f);
     }
 }

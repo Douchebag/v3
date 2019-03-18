@@ -55,13 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\MouseCamController.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerShooting.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
     <Compile Include="Assets\Scripts\ZombieAttack.cs" />
     <Compile Include="Assets\Scripts\ZombieHealth.cs" />
+    <Compile Include="Assets\Scripts\ZombieManager.cs" />
     <Compile Include="Assets\Scripts\ZombieMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>H:/v3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
