@@ -1880,7 +1880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
-  sinkSpeed: 2.5
+  sinkSpeed: 0.5
   scoreValue: 10
   deathClip: {fileID: 8300000, guid: d781748fbc2b41e4fb32af7e163745d6, type: 3}
 --- !u!114 &1815555255

@@ -7,7 +7,7 @@ public class ZombieHealth : MonoBehaviour
 {
     public int startingHealth = 100;
     public int currentHealth;
-    public float sinkSpeed = 5.5f;
+    public float sinkSpeed = 0.5f;
     public int scoreValue = 10;
     public AudioClip deathClip;
 
@@ -64,15 +64,14 @@ public class ZombieHealth : MonoBehaviour
 
         zombieAudio.clip = deathClip;
         zombieAudio.Play();
-        
     }
 
     public void StartSinking()
     {
+        isSinking = true;
+        Destroy(gameObject, sinkSpeed);
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
-        isSinking = true;
         ScoreManager.score += scoreValue;
-        Destroy(gameObject, 2f);
     }
 }
