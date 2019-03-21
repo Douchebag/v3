@@ -24,6 +24,7 @@ public class ZombieAttack : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
+        // laetur zombie attack-a player ef hann er i range og zombie er ekki daudur
         if(other.gameObject == player && zombieHealth.currentHealth > 0)
         {
             playerInRange = true;
@@ -33,6 +34,7 @@ public class ZombieAttack : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        // laetur zombie haetta ad attack-a player thegar hann fer out of range
         if(other.gameObject == player)
         {
             playerInRange = false;
