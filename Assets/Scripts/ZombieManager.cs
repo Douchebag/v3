@@ -11,11 +11,13 @@ public class ZombieManager : MonoBehaviour
 
     void Start()
     {
+        // eftir 3 sek er kallad a Spawn fallid hverjar 3 sek
         InvokeRepeating("Spawn", spawnTime, spawnTime);
     }
 
     void Spawn()
     {
+        // Ef player er ekki daudur heldur afram ad spawn-a
         if(playerHealth.currentHealth <= 0f)
         {
             return;
