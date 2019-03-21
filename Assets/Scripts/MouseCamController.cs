@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// fengid fra 4 link i heimildum
 public class MouseCamController : MonoBehaviour
 {
     [SerializeField]
