@@ -35,9 +35,11 @@ public class ZombieHealth : MonoBehaviour
             transform.Translate(-Vector3.up * sinkSpeed * Time.deltaTime);
         }
     }
-
+    
     public void TakeDamage(int amount, Vector3 hitPoint)
     {
+        // tekur health fra zombie ef hann er enntha lifandi og spilar sound effect
+        // ef zombie deyr kallar fallid i Death fallid
         if (isDead)
             return;
 
@@ -68,6 +70,7 @@ public class ZombieHealth : MonoBehaviour
 
     public void StartSinking()
     {
+        // letur zombie corpse-in falla i gegnum jordina, destroy-ar theim til ad leysa minni og baetir vid score
         isSinking = true;
         Destroy(gameObject, sinkSpeed);
         GetComponent<NavMeshAgent>().enabled = false;
