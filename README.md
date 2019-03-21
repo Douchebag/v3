@@ -1,5 +1,5 @@
 # v3
-## Ingvar Vigfússon - Tölvubraut - Tækniskólinn
+## Ingvar - Tölvubraut - Tækniskólinn
 ### Heimildir:
 1. https://unity3d.com/learn/tutorials/s/survival-shooter-tutorial
 2. https://assetstore.unity.com/packages/3d/environments/ancient-jungle-temple-demo-123179
