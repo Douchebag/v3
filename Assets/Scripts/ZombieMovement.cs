@@ -13,7 +13,7 @@ public class ZombieMovement : MonoBehaviour
 
     void Awake()
     {
-        // Set up the references.
+        // Setja up 0ll reference
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerHealth = player.GetComponent<PlayerHealth>();
         zombieHealth = GetComponent<ZombieHealth>();
@@ -22,16 +22,13 @@ public class ZombieMovement : MonoBehaviour
 
     void Update()
     {
-        // If the enemy and the player have health left...
+        // zombie eltir player ef badir hafa health, annars hreyfist zombie ekki
         if (zombieHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
         {
-            // ... set the destination of the nav mesh agent to the player.
             nav.SetDestination(player.position);
         }
-        // Otherwise...
         else
         {
-            // ... disable the nav mesh agent.
             nav.enabled = false;
         }
     }
