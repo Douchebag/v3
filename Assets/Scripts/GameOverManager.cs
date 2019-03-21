@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// birtir game over screen thegar player deyr og reload-ar scene-inu
 public class GameOverManager : MonoBehaviour
 {
     public PlayerHealth playerHealth;
