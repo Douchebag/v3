@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     Rigidbody playerRigidbody;
     int floorMask;
-    //float camRayLength = 100f;
 
     private float translation;
     private float straffe;
@@ -20,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
         floorMask = LayerMask.GetMask("Floor");
         anim = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
-        // turn off the cursor
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -31,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown("escape"))
         {
-            // turn on the cursor
             Cursor.lockState = CursorLockMode.None;
         }
         if (Input.GetKey(KeyCode.LeftShift))
@@ -52,35 +49,20 @@ public class PlayerMovement : MonoBehaviour
         }
         Animating(h, v);
         Move(h, v);
-        //Turning();
 
     }
 
     void Move(float h, float v)
     {
+        // ser um hreyfingu player-ins
         translation = v * speed * Time.deltaTime;
         straffe = h * speed * Time.deltaTime;
         transform.Translate(straffe, 0, translation);
     }
-    /*
-    void Turning()
-    {
-        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        RaycastHit floorHit;
-
-        if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
-        {
-            Vector3 playerToMouse = floorHit.point - transform.position;
-            playerToMouse.y = 0f;
-
-            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
-            playerRigidbody.MoveRotation(newRotation);
-        }
-    }
-    */
+    
     void Animating(float h, float v)
     {
+        // breytir um animation thegar a vid
         bool walking = h != 0f || v != 0f;
         if(speed >= 2.1f)
         {
