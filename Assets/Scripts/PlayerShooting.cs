@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// tekid beint fra survival shooter, mjog litid breytt
 public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20;                  // The damage inflicted by each bullet.
