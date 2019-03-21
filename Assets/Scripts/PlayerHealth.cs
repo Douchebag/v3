@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// farid eftir survival shooter
 public class PlayerHealth : MonoBehaviour
 {
     public int startingHealth = 100;
@@ -31,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+        // thegar player er attacked flash-ar sma rautt a skjanum
         if (damaged)
         {
             damageImage.color = flashColour;
@@ -44,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        // tekur health fra player thegar hann tekur damage, spilar hljod of ef hann er daudur kallar i Death
         damaged = true;
 
         currentHealth -= amount;
@@ -60,6 +63,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Death()
     {
+        // spilar death clip og stoppar player fra thvi ad skjota og hreyfa sig
         isDead = true;
 
         playerShooting.DisableEffects();
