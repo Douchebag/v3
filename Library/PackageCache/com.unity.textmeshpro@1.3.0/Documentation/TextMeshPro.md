@@ -1,7 +1,7 @@
 # **_TextMesh Pro User Guide_**
 
 #### **Overview**
-This User Guide was designed to provide first time users of TextMesh Pro with a basic overview of the features and functionality of the tool.
+This User Guide was designed to provide first time users of TextMesh Pro with a basic overview of the features and functionality of the tool
 
 #### **Installation**
 The TextMesh Pro UPM package is already included with the Unity Editor and as such does not require installation. TextMesh Pro "TMP" does however require adding resources to your project which are essential for using TextMesh Pro. 
@@ -16,11 +16,11 @@ To import the "*TMP Examples & Extras*", please use the "*Window -> TextMeshPro 
 #### **Quick Start**
 There are two TextMesh Pro components available. The first TMP text component is of type &lt;TextMeshPro&gt; and designed to work with the MeshRenderer. This component is an ideal replacement for the legacy TextMesh component. 
 
-To add a new &lt;TextMeshPro&gt; text object, go to: ì*GameObject->3D Object->TextMeshPro Text*î. 
+To add a new &lt;TextMeshPro&gt; text object, go to: ‚Äú*GameObject->3D Object->TextMeshPro Text*‚Äù. 
 
 The second TMP text component is of type  &lt;TextMeshProUGUI&gt; and designed to work with the CanvasRenderer and Canvas system. This component is an ideal replacement for the UI.Text component. 
 
-To add a new &lt;TextMeshProUGUI&gt; text object, go to: ì*GameObject->UI->TextMeshPro Text*î. 
+To add a new &lt;TextMeshProUGUI&gt; text object, go to: ‚Äú*GameObject->UI->TextMeshPro Text*‚Äù. 
 
 You may also wish to watch this [Getting Started](https://youtu.be/olnxlo-Wri4) short video which covers this topic.
 
