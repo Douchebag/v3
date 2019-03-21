@@ -5,7 +5,7 @@
 2. https://assetstore.unity.com/packages/3d/environments/ancient-jungle-temple-demo-123179
 3. https://assetstore.unity.com/packages/3d/characters/recon-boy-12208
 4. https://github.com/jiankaiwang/FirstPersonController
-### Næstu skref
+### Næstu skref:
 1. ekki unlimited ammo
 2. random ammo spawn yfir mappið
 3. random health spawn yfir mappið
