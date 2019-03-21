@@ -6,14 +6,14 @@
 3. https://assetstore.unity.com/packages/3d/characters/recon-boy-12208
 4. https://github.com/jiankaiwang/FirstPersonController
 
-### Næstu skref
+### Næstu skref:
 1. ekki unlimited ammo
 2. random ammo spawn yfir mappið
 3. random health spawn yfir mappið
 4. betri skot höndlun
 
-### Nidurhal a leik
+### Nidurhal a leik:
 https://github.com/Douchebag/v3/tree/test/build
 
-### Video
+### Video:
 https://www.youtube.com/watch?v=_sZH-psg9yE
