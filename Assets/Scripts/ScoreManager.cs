@@ -17,6 +17,7 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
+        // baetir vid score-id thegar zombie deyr
         text.text = "Score: " + score;
     }
 }
